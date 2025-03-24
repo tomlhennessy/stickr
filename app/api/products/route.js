@@ -1,5 +1,6 @@
 import Stripe from "stripe"
 import '../../../envConfig.js'
+import { NextResponse } from "next/server.js"
 
 const API_KEY = process.env.STRIPE_SECRET_KEY
 const stripe = new Stripe(API_KEY, {
@@ -35,10 +36,10 @@ export async function GET() {
 
 
         // send the combined data as json
-        return Response.json(combinedData)
+        return NextResponse.json(combinedData)
 
     } catch (err) {
         console.error('Error fetching data from stripe: ', err.message)
-        return Response.json({ error: 'Failed to fetch data from stripe' })
+        return NextResponse.json({ error: 'Failed to fetch data from stripe' })
     }
 }

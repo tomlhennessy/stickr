@@ -1,5 +1,6 @@
 import Stripe from "stripe"
 import '../../../envConfig.js'
+import { NextResponse } from "next/server.js"
 
 const API_KEY = process.env.STRIPE_SECRET_KEY
 const stripe = new Stripe(API_KEY, {
@@ -16,10 +17,10 @@ export async function POST(request) {
             success_url: process.env.NEXT_PUBLIC_BASE_URL + '/success',
             cancel_url: process.env.NEXT_PUBLIC_BASE_URL + '/'
         })
-        return Response.json(session)
+        return NextResponse.json(session)
     } catch (err) {
         console.error('Error creating cart checkout ', err.message)
-        return Response.json({ error: 'Failed to create stripe checkout page' })
+        return NextResponse.json({ error: 'Failed to create stripe checkout page' })
     }
 
 }
