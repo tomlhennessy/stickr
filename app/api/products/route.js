@@ -1,5 +1,5 @@
 import Stripe from "stripe";
-import "../../../envConfig.js";
+import "../../../../envConfig.js";
 
 // ✅ Check if STRIPE_SECRET_KEY is loaded
 const API_KEY = process.env.STRIPE_SECRET_KEY;
