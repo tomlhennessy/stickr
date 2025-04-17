@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Stickr – E-Commerce Store 🛒
 
-## Getting Started
+A full-stack online store with product listings, a shopping cart, and secure Stripe checkout.
 
-First, run the development server:
+Built to explore product flows, payments, and AWS Amplify deployment.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔗 Live Demo
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+**🛍️** [Live App (AWS Amplify)](https://main.d1cxwz0h5a8ec4.amplifyapp.com)
+**💻** [GitHub Repo](https://github.com/tomlhennessy/stickr)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧰 Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend:** React · Next.js (App Router)
+- **Backend:** Serverless API via Next.js
+- **Payments:** Stripe (secure checkout flow)
+- **Deployment:** AWS Amplify
+- **Styling:** TailwindCSS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Features
 
-## Deploy on Vercel
+- 🛒 Browse products and add to cart
+- 🧾 Stripe checkout integration
+- 📦 Order summary + redirect
+- 💳 Live Stripe test mode
+- 🖼️ Optimised layout for all screen sizes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧠 What I Learned
+
+- Handling cart logic with global state (React context)
+- Creating secure payment flows using Stripe's SDK
+- Deploying with AWS Amplify (builds + domain config)
+- Designing for UX in an e-commerce setting
+
+---
+
+## 📸 Screenshots
+
+| Product Grid | Cart | Checkout |
+|-------------|------|----------|
+| ![Grid](./screenshots/grid.png) | ![Cart](./screenshots/cart.png) | ![Checkout](./screenshots/checkout.png) |
